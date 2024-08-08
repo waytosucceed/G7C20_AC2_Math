@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        background-color: #f0f3f5; /* Light gray */
+        color: #333; /* Dark gray */
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #bbe9ff; /* Light blue */
+        /* padding: 20px; */
+      }
+
+      .header {
+        width: 100%;
+        height: 90px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        padding: 20px;
+        display: flex;
+      }
+
+      .company-logo {
+        height: 100%;
+      }
+
+      .content-container {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 800px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners */
+
+        img {
+          /* max-width: 100%; */
+          height: 300px;
+          display: block;
+          margin: 1rem auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .lesson-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333; /* Dark gray */
+        margin-bottom: 1rem;
+        text-align: center;
+        text-decoration: underline; /* Underline style */
+      }
+
+      .probing-question {
+        margin-top: 1.5rem;
+        background-color: #f0f8ff; /* Light blue */
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .probing-question div {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #444; /* Dark gray */
+        margin-bottom: 5px;
+      }
+
+      .probing-question p {
+        color: #666; /* Medium gray */
+      }
+
+      h2,
+      h3,
+      h4 {
+        color: #333; /* Dark gray */
+        margin-top: 1.5rem;
+        font-weight: bold; /* Bold font for all headings */
+      }
+
+      .learn-about {
+        background-color: palegreen;
+        border-radius: 1rem;
+        text-align: left;
+        margin: 1rem;
+        padding: 1rem 0;
+        li {
+          list-style-position: inside;
+          padding-left: 1rem;
+        }
+      }
+
+      p,
+      li {
+        color: #555; /* Medium gray */
+      }
+
+      ol,
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+      }
+
+      hr {
+        border: none; /* Remove default border */
+        height: 2px; /* Set the height of the horizontal rule */
+        background-color: palevioletred; /* Color of the rule */
+      }
+      @media (max-width: 768px) {
+        .company-logo {
+          height: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="./assests/logo/logo1.png" alt="logo" class="company-logo" />
+        <img src="./assests/logo/logo2.png" alt="logo" class="company-logo" />
+      </div>
+
+      <div class="content-container">
+        <div class="lesson-title">POLYGONS</div>
+
+        <div class="lesson-content">
+          <div>
+            <Ul>
+              <li>A polygon is a two-dimensional closed figure formed by joining three or more line segments with each other.</li>
+              <li>A polygon is a mixture of two words: <b>poly (many)</b> and <b>gon (sides)</b>.</li>
+              </Ul>
+            
+         <p>
+          <b>For example</b>: a triangle is a polygon with at least three sides. It is often referred to as a 3-gon. The term "n-gon" refers to an n-sided polygon. 
+         </p>
+            <h4><u>Polygon Shape:</u></h4>
+            <p>
+              By definition, a polygon is made up of line segments. The following are the shapes of several polygons that are surrounded by varying numbers of line segments.
+              <img src="./assests/images/1.jpg" alt="">
+            </p>
+            <h4><u>Types of Polygon</u></h4>
+            <p>
+              Polygons are categorised into distinct categories based on their sides and angles, which are:
+            </p>
+            <ul>
+              <li>Regular Polygon</li>
+              <li>Irregular Polygon</li>
+              <li>Convex Polygon</li>
+              <li>Concave Polygon</li>
+            </ul>
+            <p>
+              <b><u>Regular Polygon</u></b><br>
+              A polygon is referred to as regular if all of its sides and interior angles are equal. Regular polygons include squares, equilateral triangles, and other shapes.
+              <img src="./assests/images/2.jpg" alt="">
+              <br><br>
+              <b><u>Irregular Polygon</u></b><br>
+              A polygon is considered irregular if its inner angles and all of its sides have different measures. This indicates that for a polygon to be considered irregular, it only needs to have different angles or different side lengths. For example, a kite, a rectangle, a scalene triangle, etc.
+              <img src="./assests/images/3.jpg" alt="">
+              <br><br>
+              <b><u>Convex Polygon</u></b><br>
+              A polygon is referred to as convex if every internal angle is strictly less than 180 degrees. The vertex will point outwards from the centre of the shape.
+              <img src="./assests/images/4.jpg" alt="">
+              <br><br>
+              <b><u>Concave Polygon</u></b><br>
+              A polygon is referred to as concave if one or more of its interior angles are greater than 180 degrees. There can be at least four sides in a concave polygon. The vertex is orientated towards the polygon's interior.
+              <img src="./assests/images/5.jpg" alt="">
+
+              However, a variety of polygons are identified by their properties, angles, and number of sides.
+              <br><br>
+              Types of Polygons Based on the Number of Their Side
+              <img src="./assests/images/10.png" alt="" width="60%" height="100%">
+            </p>
+            <hr>
+            <h4><u>Diagonals</u></h4>
+            <p>
+              A diagonal is a line segment that connects two opposite vertices or corners of a polygon. 
+              <br><br>Diagonals for polygons of all shapes and sizes can be created, and for each shape, the number of diagonals can be calculated using a formula.
+              <br><br><b>For example</b>: The below given figure has four sides.
+              <img src="./assests/images/6.jpg" alt="">
+              We denote these sides by symbol n.<br><br>
+Now, we can calculate the number of diagonals by using formula n (n-3)/2<br><br>
+Therefore, number of diagonals in given shape = n (n-3)/2<br>
+                                                                           = 4(4-3)/2<br>
+                                                                             = 4/2 = 2<br><br>
+Therefore the given shape has two diagonals.
+              <img src="./assests/images/7.jpg" alt="">
+            </p>
+            <hr>
+            <h4><u>Angles of Polygon</u></h4>
+            <p>
+              As we know, a polygon has the same number of vertices as it has sides. Every corner has a specific measure of angles. These angles are divided into two types: interior and exterior angles of a polygon.
+            </p>
+            <h4><u>Interior Angle Property</u></h4>
+            <ul>
+              <li>We can find the sum of interior angles in a polygon by dividing the polygon into triangles.</li>
+              <li>The sum of interior angles in a triangle is 180°.</li>
+              <li>The number of triangles in each polygon is two less than the number of sides. In general we can conclude that, if a polygon has n sides so it is made up of (n–2) triangles</li>
+            </ul>
+            <p>
+              Now, let’s calculate the interior  angles of the following figures given below:
+              <img src="./assests/images/8.jpg" alt="">
+              In figure 1:<br><br>
+
+<br>Number of sides (n) = 3
+<br>Number of triangles = n - 2 = 3 -2 = 1
+<br>The sum of interior angle = (3 -2) x 180° = 180°
+<br><br><br>
+In figure 2:<br><br>
+
+<br>Number of sides (n) = 4
+<br>Number of triangles = n - 2 = 4 -2 = 2
+<br>The sum of interior angle = (4 -2) x 180° = 360°
+
+Thus,  sum of all the interior angles of a simple n-gon = (n − 2) × 180°<br>
+Where ‘n’ is equal to the number of sides of a polygon.<br><br>
+For example, a quadrilateral has 5 sides, therefore, the sum of all the interior angles is given by:
+<br><br>Sum of interior angles of 5-sided polygon = (5 – 2) × 180°
+<br>= 3 × 180°
+<br>= 540°
+            </p>
+            <h4><u>Exterior angle property</u></h4>
+            <p>
+              <br>If the side of a polygon is extended, the angle formed outside the polygon is the exterior angle. The sum of the exterior angles of a polygon is 360°.
+
+<br><br>
+In the figure below the angles formed outside the polygon is 72° each.  
+<br>As you extend each side and measure each exterior angle, you effectively walk around a circle because the sum of all the turns you make (each exterior angle) adds up to a full circle (360 degrees).
+ <img src="./assests/images/9.jpg" alt="">
+ The formula for calculating the size of an exterior angle is:
+<br>Exterior angle of a polygon = 360°/number of sides (n)
+
+<br><br>
+The sum of the interior and the corresponding exterior angles at each vertex of a polygon are supplementary to  one another.
+<br><br>For a polygon:
+            </p>
+            <ul>
+              <li>Interior angle + Exterior angle = 180 degrees</li>
+              <li>Exterior angle = 180 degrees – Interior angle</li>
+          </ul>
+          <h3><u>Properties:</u></h3>
+          <p>The sides and angles of a polygon determine its properties.</p>
+          <ul>
+            <li>The sum of interior angles in an n-sided polygon is (n - 2) × 180°.</li>
+            <li>The number of diagonals in a polygon with n sides is n(n - 3)/2</li>
+            <li>The number of triangles created by combining the diagonals from one corner of a polygon = n - 2.</li>
+            <li>The measure of each interior angle of an n-sided regular polygon is [(n-2) × 180°]/n.
+            </li>
+            <li>The measurement of each exterior angle of an n-sided regular polygon is 360°/n.
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
